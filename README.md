@@ -5,7 +5,7 @@ Each project is focused on a specific concept like components, props, state, and
 
 ## Projects
 
-- [ ] Project 1: Counter App
+- [x] Project 1: Counter App
 - [ ] More coming soon...
 
 ## Getting Started
