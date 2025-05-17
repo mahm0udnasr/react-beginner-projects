@@ -1,0 +1,80 @@
+.todo {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  min-width: 350px;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.todo-input input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.todo-input input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.todo-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.todo-list input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  appearance: none;
+  background: transparent;
+}
+
+.todo-list input[type="checkbox"]:checked {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.todo-list span {
+  flex: 1;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.todo-list input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
